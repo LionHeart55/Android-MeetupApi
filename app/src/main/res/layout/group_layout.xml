@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- android:background="@drawable/splash"
+        long  id;
+        long created;
+        String name;
+        String join_mode;
+        double lat;
+        double lon;
+        String urlname;
+        String description;
+        String who;
+        String localized_location;
+        String region;
+        String group_photo;
+        -->
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/ivGroupPhoto"
+            android:layout_width="230dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/loader"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/image_border" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="25sp" />
+
+        <!-- TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:textSize="30sp" / -->
+
+        <WebView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/webViewDesc"
+            android:layout_below="@+id/tvName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/tvJoinMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</ScrollView>
